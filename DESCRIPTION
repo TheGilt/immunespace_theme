@@ -1,0 +1,15 @@
+Package: IStheme
+Type: Package
+Title: ImmuneSpace GGplot Theme to Format Graphs
+Version: 0.1
+Date: 2016-02-11
+Author: Gil Guday
+Maintainer: Renan Sauteraud <rsautera@fhcrc.org>
+Description: Formats ggplot graphs to recreate the same visual presentation
+    style used on ImmuneSpace.
+License: GPL-2
+LazyData: TRUE
+Depends:
+Imports:
+    ggplot2
+RoxygenNote: 5.0.1

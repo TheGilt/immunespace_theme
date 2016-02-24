@@ -1,0 +1,18 @@
+{
+    "contents" : "#' @title theme_immune_space\n#' @name theme_immune_space\n#' @description Modifies graphs to recreate the colors and format of\n#' ImmuneSpace graphs\n#' @examples\n#' library(ggplot2)\n#' #Violinplot\n#' p <- ggplot(mtcars, aes(factor(cyl), mpg)) + ggtitle(\"Violin Plot\") + theme_immune_space() + geom_violin()\n#' p + geom_jitter()\ntheme_immune_space <- function() {\n  theme_classic() +\n    #theme(text = element_text(size = text_size)) +\n    theme(axis.text.x = element_text(angle = 45)) +\n    theme(panel.background = element_rect(fill=\"#FDF6E3\")) +\n    theme(panel.grid.major = element_line(colour = \"#ded8d5\", linetype = \"dotted\")) +\n    theme(panel.grid.minor = element_line(colour = \"#FDF6E3\", linetype = \"dotted\")) +\n    theme(axis.ticks = element_line(size = 0)) +\n    theme(axis.line = element_line(size = 0.5, colour = \"black\")) +\n    theme(plot.title = element_text(size = rel(1))) +\n    theme(strip.background = element_rect(colour = \"white\", fill = \"white\"))\n}\n",
+    "created" : 1455219609419.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4219228936",
+    "id" : "2A9C1E68",
+    "lastKnownWriteTime" : 1455740036,
+    "path" : "~/Documents/IStheme/IStheme/R/theme_immune_space.R",
+    "project_path" : "R/theme_immune_space.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,17 @@
+{
+    "contents" : "Package: IStheme\nType: Package\nTitle: ImmuneSpace GGplot Theme to Format Graphs\nVersion: 0.1\nDate: 2016-02-11\nAuthor: Gil Guday\nMaintainer: Renan Sauteraud <rsautera@fhcrc.org>\nDescription: Formats ggplot graphs to recreate the same visual presentation\n    style used on ImmuneSpace.\nLicense: GPL-2\nLazyData: TRUE\nDepends:\nImports:\n    ggplot2\nRoxygenNote: 5.0.1\n",
+    "created" : 1455214822519.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "714951377",
+    "id" : "F16E16D",
+    "lastKnownWriteTime" : 1455739773,
+    "path" : "~/Documents/IStheme/IStheme/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "dcf"
+}
