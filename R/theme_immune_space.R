@@ -8,6 +8,7 @@
 #' p <- ggplot(mtcars, aes(factor(cyl), mpg)) + ggtitle("Violin Plot") + theme_immune_space() + geom_violin()
 #' p + geom_jitter()
 theme_immune_space <- function() {
+  theme_scale()
   theme_classic() +
     #theme(text = element_text(size = text_size)) +
     theme(axis.text.x = element_text(angle = 45)) +
@@ -18,4 +19,17 @@ theme_immune_space <- function() {
     theme(axis.line = element_line(size = 0.5, colour = "black")) +
     theme(plot.title = element_text(size = rel(1))) +
     theme(strip.background = element_rect(colour = "white", fill = "white"))
+}
+##Setting colors 
+theme_scale <- function(envir = as.environment(1)){                    
+  scale_updates <- list(                                                        
+    scale_colour_gradient = function(...) continuous_scale('colour', 'ggthemr', scales::seq_gradient_pal("#268bd2", "#dc322f"), ...),
+    scale_colour_continuous = function(...) continuous_scale('colour', 'ggthemr', scales::seq_gradient_pal("#268bd2", "#dc322f"), ...)
+  )                                                                             
+  
+  Map(                                                                          
+    function (name, f) assign(name, f, envir = envir),                          
+    names(scale_updates),                                                       
+    scale_updates                                                               
+  )                                                                             
 }
